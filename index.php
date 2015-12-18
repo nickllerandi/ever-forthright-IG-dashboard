@@ -14,17 +14,24 @@
     
   <body>
       <div class="container">
-          
-              
-                  <?php include('inc/header.php'); ?>
-              
-          
           <div class="row">
               <div class="col-md-12">
-                  <?php include('inc/slideshow.php'); ?>
+                  <ul class="nav nav-pills">
+                      <li class="inTheStudio"><a href="#">In the Studio</a></li>
+                      <li class="musicAcademy"><a href="#">Music Academy</a></li>
+                      <li class="booze"><a href="#">Booze</a></li>
+                  </ul>
               </div>
           </div>
       </div>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-12">
+                  <img src="../img/lostbanner1700.jpg">
+              </div>
+          </div>
+      </div>
+          
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
