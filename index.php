@@ -13,15 +13,15 @@
   </head>
 
   <body>
-      <div class="container-fluid">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-md-4"><a href="#">In the Studio</a></div>
-            <div class="col-md-4"><a href="#">Music Academy</a><</div>
+            <div class="col-md-4"><a href="#">Music Academy</a></div>
             <div class="col-md-4"><a href="#">Booze</a></div>
           </div>
           <div class="row">
               <div class="col-md-12">
-                  <img src="../img/lostbanner1700.jpg">
+                  <img src="../img/lostbannerweb.jpg">
               </div>
           </div>
       </div>

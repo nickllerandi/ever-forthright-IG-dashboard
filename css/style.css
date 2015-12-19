@@ -1,14 +1,17 @@
 body {
     background: black;
+    font-family: oswald;
 }
 
 a {
     color: white;
     margin-top: 15px;
+   
 }
 
 a:hover {
-    color: yellow;
+    color: #FFE200;
+    text-decoration: none;
 }
 
 img {
@@ -20,6 +23,8 @@ img {
     height: 100%;
 }
 
-.nav {
-    display: inline;
+.col-md-4 {
+    text-align: center;
+    margin: 10px 0 10px 0;
+    
 }
