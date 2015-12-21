@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/slideshow.css" type="text/css">
+    <script type="text/javascript" src="instafeed.js/instafeed.min.js"></script>
+      
   </head>
 
   <body>
@@ -20,15 +22,33 @@
             <div class="col-md-4"><a href="#">Booze</a></div>
           </div>
           <div class="row">
-              <div class="col-md-12">
-                  <img src="../img/lostbannerweb.jpg">
+              <div class="col-md-6">
+                  <img src="img/lostbannerweb.jpg">
               </div>
+              <div class="col-md-6">
+                  <img src="img/stimpy_lockjaw.jpg">
+              </div>              
+          </div>         
+      </div>
+      
+      <div class="row">
+          <div class="col-md-12">
+              <div id="instafeed"></div>
           </div>
       </div>
+        
+      <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'awesome',
+        clientId: 'b5fe88095947410699a2a913ee3dc8f9',
+        template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+    });
+    feed.run();
+      </script>
 
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+ 
   </body>
 </html>
