@@ -19,14 +19,17 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-4"><a href="inthestudio.php">In the Studio</a></div>
-            <div class="col-md-4"><a href="#">Music Academy</a></div>
-            <div class="col-md-4"><a href="#">Booze</a></div>
+            <div class="col-md-4"><a href="musicacademy.php">Music Academy</a></div>
+            <div class="col-md-4"><a href="booze.php">Booze</a></div>
           </div>
-        <div class="container-fluid">
+         
+          <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4">  
                     <div id="instafeed"></div>
                 </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
             </div>    
         </div>
             
