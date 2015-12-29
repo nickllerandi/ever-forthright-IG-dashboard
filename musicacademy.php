@@ -23,12 +23,7 @@
             <div class="col-md-4"><a href="booze.php">Booze</a></div>
           </div>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">  
-                    <div id="instafeed"></div>
-                </div>
-                <div class="col-md-4"></div>
+            <div class="row" id="instafeed">
             </div>    
         </div>
             
@@ -39,6 +34,21 @@
                 resolution: 'standard_resolution',
                 accessToken: '231269882.b5fe880.615795fc785a426f982d015761971415',
                 clientId: 'b5fe88095947410699a2a913ee3dc8f9',
+                template: '<div class="col-md-4"><a href="{{link}}" target="_blank"><img src="{{image}}"/><div class="likes">&hearts; {{likes}}</div></a></div>',
+                limit: 60,
+                after: function () {
+    var images = $("#instafeed").find('a');
+    $.each(images, function(index, image) {
+      var delay = (index * 75) + 'ms';
+      $(image).css('-webkit-animation-delay', delay);
+      $(image).css('-moz-animation-delay', delay);
+      $(image).css('-ms-animation-delay', delay);
+      $(image).css('-o-animation-delay', delay);
+      $(image).css('animation-delay', delay);
+      $(image).addClass('animated flipInX');
+    });
+  },
+                
                 filter: function(image) {
                     return image.tags.indexOf('efmusicacademy') >= 0;
                 }
